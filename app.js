@@ -12,7 +12,7 @@ app.use(express.json());
 /* -------------------- MONGOOSE CONNECTION -------------------- */
 mongoose
   .connect(
-    "mongodb+srv://Maitreya:killdill12@cluster0.sk6ugig.mongodb.net/triviaappdatabase?retryWrites=true&w=majority"
+     process.env.mongourl
   )
   .then(() => console.log("✅ MongoDB connected (triviaappdatabase)"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
@@ -107,3 +107,4 @@ app.get("/get-questions", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
+
