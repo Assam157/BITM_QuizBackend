@@ -1,0 +1,17 @@
+{
+  "name": "trivia-app-backend",
+  "version": "1.0.0",
+  "description": "Express + MongoDB backend for trivia app",
+  "main": "pp.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.3.2",
+    "cors": "^2.8.5"
+  }
+}
